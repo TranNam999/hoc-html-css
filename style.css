@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}          
+#main{
+
+}
+#header{
+
+    height: 50px;
+    background-color: #1e00ff;
+
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav {
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;/* relative: gan voi khoi ngoai, static:hien thi cac khoi nam ngang , absolute:gan tat ca noi dung vao 1 khoi ve ben trai man hinh*/
+}
+#nav > li > a{
+    color: rgb(34, 135, 224);
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav{
+    min-width: 150pxpx;
+
+    display: none;
+    position: absolute;
+    background-color: #3b353b;
+    top: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,03);
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav li a{
+
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 26px;
+    display: inline-block;
+    margin: 0 2px;
+}
+#nav .subnav li:hover a {
+    color: blue;
+    background-color: #5d395d;
+}
+#nav > li:hover > a{
+    color: rgb(255, 0, 0);
+    background-color: #ff00ff;
+}
+#nav li:hover a {   
+    color: blue;
+    background-color: #ff00ff;
+}
+#header .search-btn{
+    float: right;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    
+}
+#header .search-btn:hover {
+    background-color: red;
+
+}
+#slider{
+
+    min-width: 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+    padding-top: 50%;
+    background: url('/web-the-bard/assets/images/tải\ xuống.jpg')  ;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+}
+#slider .text-heading{
+
+}
+#slider .text-description{
+
+}
+#conten{
+
+}
+#footer{
+
+}
